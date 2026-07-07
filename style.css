@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#03000b;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+#sky{position:fixed;inset:0;width:100vw;height:100vh;background:radial-gradient(circle at center,#230026 0%,#070011 45%,#000 100%)}
+#intro{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#310022,#03000b 70%);transition:1s}
+.intro-card{text-align:center;padding:28px 22px;border:1px solid rgba(255,255,255,.18);border-radius:28px;background:rgba(255,255,255,.06);box-shadow:0 0 40px rgba(255,55,130,.3);backdrop-filter:blur(8px);width:min(88vw,420px)}
+.small{font-size:23px;letter-spacing:.5px;color:#ffd6e5}
+h1{font-size:46px;margin:12px 0 4px;text-shadow:0 0 20px #ff4f9b}
+.date{font-size:28px;margin:10px 0 22px;color:#ffe9a8;font-weight:700}
+button{border:0;border-radius:999px;padding:12px 22px;background:linear-gradient(135deg,#ff2f8c,#ffb347);color:#fff;font-size:16px;font-weight:700;box-shadow:0 0 24px rgba(255,66,143,.45)}
+#centerText{position:fixed;z-index:5;top:6%;left:0;right:0;text-align:center;pointer-events:none;text-shadow:0 0 18px #ff4f9b}
+#centerText h2{margin:0;font-size:25px}
+#centerText p{margin:5px 0;font-size:22px;color:#ffe9a8;font-weight:700}
+#centerText span{font-size:13px;color:rgba(255,255,255,.75)}
+#musicBtn,#memoryBtn{position:fixed;z-index:10;bottom:18px;font-size:14px;padding:10px 15px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px)}
+#musicBtn{left:14px}
+#memoryBtn{right:14px}
+#messageBox{position:fixed;inset:0;z-index:30;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.68);padding:18px}
+.box{position:relative;max-width:430px;background:linear-gradient(160deg,rgba(50,0,32,.96),rgba(15,0,30,.96));border:1px solid rgba(255,255,255,.18);border-radius:26px;padding:28px 22px;text-align:center;box-shadow:0 0 45px rgba(255,73,150,.4)}
+.box h2{font-size:30px;margin:0 0 14px;color:#ffd6e5}
+.box p{line-height:1.6;font-size:17px}
+.box .final{color:#ffe9a8;font-weight:700}
+#closeMsg{position:absolute;right:12px;top:10px;width:34px;height:34px;padding:0;background:rgba(255,255,255,.12);font-size:24px}
+.heartLabel{position:fixed;transform-style:preserve-3d;color:#fff;font-weight:700;text-align:center;text-shadow:0 0 10px #ff4f9b,0 0 18px #ff4f9b;will-change:transform,opacity;pointer-events:none;white-space:nowrap}

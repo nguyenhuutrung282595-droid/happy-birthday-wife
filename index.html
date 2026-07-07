@@ -1,275 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Chúc Mừng Sinh Nhật Vợ Yêu ❤️</title>
-<style>
-*{box-sizing:border-box}
-html,body{
-  margin:0;
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  background:#020202;
-  color:white;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-}
-body{
-  background:
-    radial-gradient(circle at 50% 18%, rgba(255,50,120,.23), transparent 34%),
-    radial-gradient(circle at 18% 85%, rgba(255,190,90,.16), transparent 28%),
-    linear-gradient(180deg,#000,#080104 55%,#000);
-}
-.wrap{
-  position:relative;
-  width:100vw;
-  height:100svh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:24px;
-  text-align:center;
-}
-.content{
-  position:relative;
-  z-index:5;
-  width:min(94vw,520px);
-  padding:28px 18px;
-  border-radius:32px;
-  background:rgba(0,0,0,.35);
-  border:1px solid rgba(255,190,210,.22);
-  box-shadow:0 0 80px rgba(255,35,110,.22);
-  backdrop-filter:blur(8px);
-  animation:fadeIn 1.2s ease both;
-}
-.top{
-  font-size:24px;
-  line-height:1.25;
-  font-weight:700;
-  color:#fff;
-  text-shadow:0 0 18px rgba(255,255,255,.7);
-  margin-bottom:4px;
-}
-.title{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(54px,18vw,96px);
-  line-height:.9;
-  margin:4px 0 12px;
-  color:#ff75aa;
-  text-shadow:
-    0 0 8px #ff4f95,
-    0 0 25px #ff2e82,
-    0 0 55px rgba(255,30,120,.85);
-  animation:glow 2.6s ease-in-out infinite alternate;
-}
-.date{
-  color:#ffe2b7;
-  font-size:25px;
-  letter-spacing:4px;
-  margin:10px 0 20px;
-  text-shadow:0 0 18px rgba(255,210,120,.9);
-}
-.message{
-  min-height:190px;
-  padding:18px 14px;
-  border-radius:22px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.12);
-  font-size:20px;
-  line-height:1.55;
-  white-space:pre-line;
-  color:#fff7fa;
-  text-shadow:0 0 9px rgba(255,255,255,.25);
-}
-.final{
-  display:none;
-  margin-top:18px;
-  font-size:30px;
-  font-weight:900;
-  color:#ff9dbf;
-  text-shadow:0 0 16px #ff2d7c,0 0 34px #ff2d7c;
-  animation:pop 1s ease both;
-}
-.hint{
-  margin-top:14px;
-  font-size:13px;
-  color:#ffd0dc;
-  opacity:.86;
-}
-.music{
-  position:fixed;
-  right:14px;
-  bottom:14px;
-  z-index:30;
-  border:0;
-  border-radius:999px;
-  padding:12px 14px;
-  background:rgba(255,255,255,.12);
-  color:white;
-  font-size:22px;
-  backdrop-filter:blur(8px);
-  border:1px solid rgba(255,255,255,.2);
-}
-.heart,.petal,.star{
-  position:fixed;
-  top:-40px;
-  z-index:2;
-  pointer-events:none;
-  animation:fall linear forwards;
-}
-.heart{color:#ff4f8c;text-shadow:0 0 14px #ff4f8c}
-.petal{color:#ffb4c8;opacity:.85}
-.star{
-  width:4px;height:4px;border-radius:50%;
-  background:#ffd98a;box-shadow:0 0 14px #ffd98a;
-}
-.spark{
-  position:fixed;
-  width:6px;height:6px;border-radius:50%;
-  z-index:20;
-  animation:spark .9s ease-out forwards;
-}
-.line{
-  position:absolute;
-  left:50%;
-  top:50%;
-  width:70vw;
-  height:1px;
-  background:linear-gradient(90deg,transparent,#ff77a6,transparent);
-  transform:translate(-50%,-50%);
-  opacity:.35;
-  box-shadow:0 0 20px #ff77a6;
-}
-@keyframes fadeIn{from{opacity:0;transform:scale(.96) translateY(15px)}to{opacity:1;transform:none}}
-@keyframes glow{from{filter:brightness(1)}to{filter:brightness(1.35)}}
-@keyframes fall{to{transform:translateY(115vh) rotate(360deg);opacity:.05}}
-@keyframes spark{to{transform:translate(var(--x),var(--y));opacity:0}}
-@keyframes pop{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:scale(1)}}
-@media(max-width:390px){
-  .message{font-size:18px}
-  .top{font-size:21px}
-  .date{font-size:21px}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Birthday Kim Thoại ❤️</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<audio id="music" loop>
-  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=romantic-piano-110375.mp3" type="audio/mpeg">
-</audio>
+  <div id="intro">
+    <div class="intro-card">
+      <div class="small">🎂 Chúc Mừng Sinh Nhật</div>
+      <h1>Kim Thoại ❤️</h1>
+      <div class="date">17/07</div>
+      <button id="startBtn">Mở món quà</button>
+    </div>
+  </div>
 
-<div class="wrap" onclick="playMusic()">
-  <div class="line"></div>
-  <main class="content">
-    <div class="top">Chúc Mừng Sinh Nhật</div>
-    <div class="title">Vợ Yêu</div>
-    <div class="date">17 • 07 • 2026</div>
-    <div id="msg" class="message"></div>
-    <div id="final" class="final">Anh yêu em rất nhiều ❤️</div>
-    <div class="hint">Chạm vào màn hình để mở nhạc 🎵</div>
-  </main>
-</div>
+  <canvas id="sky"></canvas>
 
-<button class="music" onclick="toggleMusic(event)">🎵</button>
+  <div id="centerText">
+    <h2>Happy Birthday Kim Thoại ❤️</h2>
+    <p>17/07</p>
+    <span>Vuốt để xoay • Chạm vào trái tim</span>
+  </div>
 
-<script>
-const lines = [
-`Gửi người vợ tuyệt vời nhất của anh... ❤️`,
-`Chúc em sinh nhật thật vui vẻ,
-luôn xinh đẹp, mạnh khỏe và hạnh phúc.`,
-`Cảm ơn em đã luôn ở bên anh,
-cùng anh đi qua những ngày bình thường nhất
-đến những ngày đáng nhớ nhất.`,
-`Cảm ơn em đã cùng anh xây dựng
-một gia đình nhỏ đầy yêu thương.`,
-`Cảm ơn em đã mang đến cho anh
-món quà quý giá nhất...`,
-`Bé Khải Minh. 👶❤️`,
-`Tuổi mới, anh chúc vợ yêu của anh
-luôn bình an, luôn cười thật nhiều
-và luôn được yêu thương.`,
-`Anh không hứa sẽ hoàn hảo,
-nhưng anh hứa sẽ luôn cố gắng
-để yêu thương, che chở
-và đồng hành cùng mẹ con em.`,
-`Chúc Mừng Sinh Nhật Vợ Yêu ❤️`
-];
+  <button id="musicBtn">🎵 Bật nhạc</button>
+  <button id="memoryBtn">💌 Lời nhắn</button>
 
-const msg = document.getElementById("msg");
-const final = document.getElementById("final");
-let lineIndex = 0;
-let charIndex = 0;
-let current = "";
+  <div id="messageBox">
+    <div class="box">
+      <button id="closeMsg">×</button>
+      <h2>Kim Thoại ❤️</h2>
+      <p>
+        Từ những ngày còn khó khăn, căn phòng trọ nhỏ năm 2023...
+        đến hôm nay gia đình mình đã có Khải Minh.
+      </p>
+      <p>
+        Điều quý giá nhất anh có không phải là vàng hay vật chất,
+        mà là em và con.
+      </p>
+      <p class="final">Chúc em sinh nhật thật hạnh phúc. Anh yêu em mãi mãi.</p>
+      <b>— Nguyễn Hữu Trung ❤️</b>
+    </div>
+  </div>
 
-function typeNext(){
-  if(lineIndex >= lines.length){
-    final.style.display = "block";
-    fireworks();
-    setInterval(fireworks, 4500);
-    return;
-  }
-  const line = lines[lineIndex];
-  if(charIndex === 0) current = "";
-  current += line.charAt(charIndex);
-  msg.textContent = current;
-  charIndex++;
-  if(charIndex <= line.length){
-    setTimeout(typeNext, 45);
-  }else{
-    lineIndex++;
-    charIndex = 0;
-    if(lineIndex === 6) fireworks();
-    setTimeout(typeNext, 1700);
-  }
-}
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/30/audio_6bfe6f9b1f.mp3?filename=romantic-piano-112195.mp3" type="audio/mpeg">
+  </audio>
 
-function playMusic(){
-  document.getElementById("music").play().catch(()=>{});
-}
-function toggleMusic(e){
-  e.stopPropagation();
-  const m=document.getElementById("music");
-  if(m.paused) m.play().catch(()=>{}); else m.pause();
-}
-
-function floatItem(){
-  const e=document.createElement("div");
-  const r=Math.random();
-  if(r>.72){ e.className="petal"; e.textContent="🌹"; }
-  else if(r>.14){ e.className="heart"; e.textContent="❤️"; }
-  else { e.className="star"; }
-  e.style.left=Math.random()*100+"vw";
-  e.style.fontSize=(14+Math.random()*28)+"px";
-  e.style.animationDuration=(4+Math.random()*6)+"s";
-  e.style.opacity=.55+Math.random()*.45;
-  document.body.appendChild(e);
-  setTimeout(()=>e.remove(),10500);
-}
-
-function fireworks(){
-  for(let b=0;b<4;b++){
-    const cx=innerWidth*(.15+Math.random()*.7);
-    const cy=innerHeight*(.12+Math.random()*.58);
-    for(let i=0;i<45;i++){
-      const s=document.createElement("div");
-      s.className="spark";
-      s.style.left=cx+"px";
-      s.style.top=cy+"px";
-      const a=Math.random()*Math.PI*2;
-      const r=45+Math.random()*145;
-      s.style.setProperty("--x",Math.cos(a)*r+"px");
-      s.style.setProperty("--y",Math.sin(a)*r+"px");
-      s.style.background=["#fff","#ffd1dc","#ff477e","#ffe66d","#ff9dba"][Math.floor(Math.random()*5)];
-      s.style.boxShadow="0 0 14px "+s.style.background;
-      document.body.appendChild(s);
-      setTimeout(()=>s.remove(),1000);
-    }
-  }
-}
-
-setInterval(floatItem, 260);
-setTimeout(typeNext, 700);
-setTimeout(fireworks, 1200);
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
